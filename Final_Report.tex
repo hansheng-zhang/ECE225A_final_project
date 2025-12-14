@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=1in}
+
+\title{Genshin Impact Character Rerun Interval Analysis Report}
+\author{Hansheng Zhang}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\noindent \textbf{GitHub Repository:} \url{https://github.com/hansheng-zhang/ECE225A_final_project}
+
+\begin{abstract}
+This report presents a statistical analysis of character rerun intervals in the Action RPG \textit{Genshin Impact}. By analyzing banner history data ranging from Version 1.3 to the projected Version 6.2, we investigate the relationship between a character’s banner popularity (wish counts) and the duration of their hiatus between appearances. Contrary to the common community belief that ``popular characters return sooner,'' our findings suggest a weak negative correlation (-0.21), indicating that popularity is a minor factor. The primary driver of increasing wait times is identified as the rapid expansion of the character roster, which creates a scheduling bottleneck.
+\end{abstract}
+
+\section{Introduction}
+
+\subsection{Background}
+\textit{Genshin Impact} utilizes a ``gacha'' monetization model where playable characters are obtained through limited-time events known as ``Banners.'' Once a character's banner ends, they become unavailable until their next ``Rerun.'' For players, especially those who are Free-to-Play (F2P) or low-spenders, understanding the logic behind rerun scheduling is crucial for resource management. Currencies (Primogems) are scarce, and missing a desired character can result in a wait of over a year.
+
+\subsection{Problem Statement}
+The central question of this study is: \textbf{Does character popularity influence rerun scheduling?}
+Specifically, we aim to determine if characters with higher sales (proxied by ``Wish Counts'') are prioritized by the developers (HoYoverse) to return more frequently than less popular characters.
+
+\subsection{Motivation}
+Understanding this relationship provides value in two ways:
+\begin{enumerate}
+    \item \textbf{Player Strategy}: If popularity dictates reruns, players can predict when high-tier characters will return and save resources accordingly.
+    \item \textbf{Game Economy Insight}: It sheds light on whether the developer favors short-term revenue (rerunning best-sellers) or long-term engagement (forcing scarcity).
+\end{enumerate}
+
+\section{Data Description}
+
+\subsection{Data Source}
+The raw data was aggregated from \textit{paimon.moe}, a community database that tracks global wish statistics. The dataset \texttt{wish\_stats.txt} includes banner history from \textbf{Version 1.3} extending into future projections up to \textbf{Version 6.2}.
+
+\subsection{Data Structure}
+The processed dataset (\texttt{cleaned\_wish\_data.csv}) contains the following key features:
+\begin{itemize}
+    \item \textbf{Version}: The game update version (e.g., 2.1, 4.0).
+    \item \textbf{Character}: Name of the 5-star character featured.
+    \item \textbf{WishCount}: Total estimated wishes pulled on the banner (proxy for revenue/popularity).
+    \item \textbf{RerunInterval}: The calculated number of days since the character's previous start date.
+    \item \textbf{MajorVersion}: Categorical grouping (1.x, 2.x, etc.) used for temporal normalization.
+\end{itemize}
+
+\textit{Note on Data Scope}: The dataset includes future version predictions (Version 5.x and 6.x). While these data points are speculative or based on leaks/trends, they were included to test the robustness of the trend lines over a longer horizon.
+
+\section{Data Preprocessing}
+
+To insure accurate statistical analysis, several preprocessing steps were undertaken using Python (Pandas):
+
+\subsection{Timeline Reconstruction}
+Since the raw data provided Version numbers rather than absolute dates, we reconstructed the timeline by assigning the standard \textbf{42-day cycle} to each version.
+\begin{itemize}
+    \item \textit{Observation}: Versions 1.0 through 1.2 were absent from the source. Analysis thus begins effectively from Version 1.3.
+\end{itemize}
+
+\subsection{Interval Calculation}
+The \textbf{Rerun Interval} was defined as the number of days between the start of the current banner and the start of the character's immediately preceding banner.
+\begin{itemize}
+    \item First appearances (debut banners) have \texttt{NaN} intervals and were excluded from interval-specific analysis.
+    \item Intervals were adjusted to reflect the ``wait time,'' though for consistency, the full cycle difference was used.
+\end{itemize}
+
+\subsection{Popularity Normalization (Z-Score)}
+A raw ``Wish Count'' is an inconsistent metric because the game's player base has fluctuated significantly over 4+ years. A wish count of 100,000 in Version 1.3 is not directly comparable to 100,000 in Version 4.0 due to player growth and churn.
+To address this, we implemented \textbf{Z-Score Normalization} grouped by \textbf{Major Version}:
+
+\begin{equation}
+Z = \frac{x - \mu_{version}}{\sigma_{version}}
+\end{equation}
+
+This transforms absolute popularity into \textit{relative popularity} compared to other banners of the same era, allowing for a fair comparison of ``popularity clout'' across time.
+
+\section{Methodology and Model}
+
+\subsection{Feature Lagging}
+To test if \textit{past} popularity predicts \textit{future} wait times, we created lag features. We correlated the \textbf{Wish Count of Banner $N$} with the \textbf{Rerun Interval of Banner $N+1$}.
+\begin{itemize}
+    \item \textit{Hypothesis}: High $Z_{score}$ at $T_0$ $\rightarrow$ Low $\Delta T$ at $T_1$.
+\end{itemize}
+
+\subsection{Statistical Methods}
+\begin{itemize}
+    \item \textbf{Pearson Correlation}: Used to quantify the linear relationship between Previous Popularity and Rerun Interval.
+    \item \textbf{Linear Regression}: A simple polynomial fit (degree 1) was applied to visualize the trend line key scatter plots.
+    \item \textbf{Grouping}: Data was segmented by Major Version to observe evolutionary trends in scheduling philosophy.
+\end{itemize}
+
+\section{Visualization and Insights}
+
+\subsection{The ``Rerun Bottleneck''}
+The strongest signal in the data is the increasing average wait time.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/rerun_trend.png}
+    \caption{Rerun Trend}
+    \label{fig:rerun_trend}
+\end{figure}
+
+As shown in the scatter plot above (colored by Version), the interval floor has steadily risen.
+\begin{itemize}
+    \item \textbf{Version 2.x Average}: $\sim$231 Days
+    \item \textbf{Version 5.x Average}: $\sim$320 Days
+    \item \textbf{Insight}: The character roster expands faster than banner slots (even with double/triple banners), causing a ``traffic jam.'' Players obtain new characters easily but ``re-obtaining'' or getting constellations for old ones is becoming significantly harder.
+\end{itemize}
+
+\subsection{Popularity vs. Wait Time Correlation}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/wish_correlation.png}
+    \caption{Correlation Plot}
+    \label{fig:wish_correlation}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Correlation Coefficient}: \textbf{-0.206}
+    \item \textbf{Result}: The correlation is negative, as hypothesized, but it is \textbf{weak}.
+    \item \textbf{Interpretation}: There is a slight tendency for popular characters (High Z-Score) to return faster, but it is not a dominant rule.
+    \begin{itemize}
+        \item \textit{Outliers}: Some highly popular characters (e.g., Archons) often adhere to strict annual schedules regardless of demand.
+        \item \textit{Story Relevance}: Characters often rerun when they appear in the main storyline, overriding their sales data.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Distribution Variance}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/interval_dist.png}
+    \caption{Interval Distribution}
+    \label{fig:interval_dist}
+\end{figure}
+
+The boxplot analysis reveals that while the median interval increases, the \textbf{variance} also expands. In later versions (4.x, 5.x), the ``whiskers'' of the plot are much wider. This implies \textbf{unpredictability}: while you will likely wait longer, you \textit{might} get lucky with a 6-month rerun, or be unlucky with an 18-month hiatus (the ``Eula effect'').
+
+\section{Conclusion}
+This project analyzed the rerun mechanics of \textit{Genshin Impact} using data spanning over 5 years (including projections). We conclude that \textbf{popularity is statistically insignificant} as a primary predictor for rerun intervals ($r \approx -0.2$).
+
+The scheduling logic appears to comprise:
+\begin{enumerate}
+    \item \textbf{Roster Size (70\%)}: Simple queue mechanics forcing longer waits.
+    \item \textbf{Story/Event Relevance (20\%)}: Characters rerun when relevant to the plot.
+    \item \textbf{Popularity (10\%)}: A slight bias to rerun money-makers sooner.
+\end{enumerate}
+
+\textbf{Final Recommendation}: Players should not rely on a character's popularity to predict their return. Instead, assume a baseline wait of \textbf{9-11 months}, extending longer as the game updates.
+
+\section{References}
+\begin{enumerate}
+    \item \textbf{Project Repository}: \url{https://github.com/hansheng-zhang/ECE225A_final_project}
+    \item \textbf{Data Source}: \textit{Paimon.moe} Global Wish Statistics. Retrieved from \url{https://paimon.moe/wish}.
+\end{enumerate}
+
+\end{document}
