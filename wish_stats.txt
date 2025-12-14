@@ -1,0 +1,902 @@
+6.2 A
+
+42,484	
+Durin Summoned
+
+58.6% won 50:50
+
+3,753	
+Venti Summoned
+
+58.6% won 50:50
+
+6.1 B
+11,252	
+Arlecchino Summoned
+
+59.06% won 50:50
+
+2,186	
+Zhongli Summoned
+
+59.06% won 50:50
+
+6.1 A
+60,093	
+Nefer Summoned
+
+56.5% won 50:50
+
+33,229	
+Furina Summoned
+
+56.5% won 50:50
+
+6.0 B
+120,688	
+Flins Summoned
+
+58.59% won 50:50
+
+23,167	
+Yelan Summoned
+
+58.59% won 50:50
+
+6.0 A
+123,815	
+Lauma Summoned
+
+58.74% won 50:50
+
+13,359	
+Nahida Summoned
+
+58.74% won 50:50
+
+5.8 B
+19,117	
+Mualani Summoned
+
+58.27% won 50:50
+
+26,307	
+Chasca Summoned
+
+58.27% won 50:50
+
+5.8 A
+60,054	
+Ineffa Summoned
+
+58.82% won 50:50
+
+68,793	
+Citlali Summoned
+
+58.82% won 50:50
+
+5.7 B
+61,522	
+Mavuika Summoned
+
+58.57% won 50:50
+
+15,256	
+Emilie Summoned
+
+58.57% won 50:50
+
+5.7 A
+202,069	
+Skirk Summoned
+
+58.64% won 50:50
+
+13,813	
+Shenhe Summoned
+
+58.64% won 50:50
+
+
+5.6 C
+13,980 Kaedehara Kazuha Summoned
+9,969 Yae Miko Summoned
+9,504 Chiori Summoned
+8,896 Sangonomiya Kokomi Summoned
+7,051 Kamisato Ayato Summoned
+6,912 Kamisato Ayaka Summoned
+6,253 Arataki Itto Summoned
+5,279 Yoimiya Summoned
+
+
+5.6 B
+20,494	
+Kinich Summoned
+
+58.21% won 50:50
+
+15,762	
+Raiden Shogun Summoned
+
+58.21% won 50:50
+
+5.6 A
+121,147	
+Escoffier Summoned
+
+58.51% won 50:50
+
+23,652	
+Navia Summoned
+
+58.51% won 50:50
+
+
+5.5 B
+78,441	
+Xilonen Summoned
+
+58.13% won 50:50
+
+12,949	
+Venti Summoned
+
+58.13% won 50:50
+
+5.5 A
+82,377	
+Varesa Summoned
+
+58.31% won 50:50
+
+34,840	
+Xianyun Summoned
+
+58.31% won 50:50
+
+5.4 B
+46,540	
+Wriothesley Summoned
+
+55.43% won 50:50
+
+125,418	
+Furina Summoned
+
+55.43% won 50:50
+
+5.4 A
+16,854	
+Yumemizuki Mizuki Summoned
+
+54.65% won 50:50
+
+8,671	
+Sigewinne Summoned
+
+54.65% won 50:50
+
+
+5.3 C
+31,190 Shenhe Summoned
+17,750 Tartaglia Summoned
+17,585 Ganyu Summoned
+17,068 Xiao Summoned
+14,404 Baizhu Summoned
+
+
+5.3 B
+110,841	
+Arlecchino Summoned
+
+55.88% won 50:50
+
+38,786	
+Clorinde Summoned
+
+55.88% won 50:50
+
+5.3 A
+	248,360	
+Mavuika Summoned
+
+55.21% won 50:50
+
+148,036	
+Citlali Summoned
+
+55.21% won 50:50
+
+
+5.2 B
+99,472	
+Neuvillette Summoned
+
+54.44% won 50:50
+
+46,236	
+Zhongli Summoned
+
+54.44% won 50:50
+
+5.2 A
+109,105	
+Chasca Summoned
+
+54.23% won 50:50
+
+16,803	
+Lyney Summoned
+
+54.23% won 50:50
+
+5.1 B
+71,510	
+Nahida Summoned
+
+53.51% won 50:50
+
+31,570	
+Hu Tao Summoned
+
+53.51% won 50:50
+
+5.1 A
+196,857	
+Xilonen Summoned
+
+53.02% won 50:50
+
+23,347	
+Chiori Summoned
+
+53.02% won 50:50
+
+5.0 B
+123,126	
+Kinich Summoned
+
+51.87% won 50:50
+
+77,584	
+Raiden Shogun Summoned
+
+51.87% won 50:50
+
+5.0 A
+143,297	
+Mualani Summoned
+
+52% won 50:50
+
+73,008	
+Kaedehara Kazuha Summoned
+
+52% won 50:50
+
+4.8 B
+46,028	
+Emilie Summoned
+
+51.49% won 50:50
+
+61,975	
+Yelan Summoned
+
+51.49% won 50:50
+
+
+4.8 A
+57,513	
+Navia Summoned
+
+51.66% won 50:50
+
+34,685	
+Nilou Summoned
+
+51.66% won 50:50
+
+4.7 B
+29,671	
+Sigewinne Summoned
+
+51.18% won 50:50
+
+131,193	
+Furina Summoned
+
+51.18% won 50:50
+
+
+4.7 A
+121,187	
+Clorinde Summoned
+
+51.65% won 50:50
+
+32,699	
+Alhaitham Summoned
+
+51.65% won 50:50
+
+4.6 B
+32,209	
+Wanderer Summoned
+
+51.32% won 50:50
+
+16,953	
+Baizhu Summoned
+
+51.32% won 50:50
+
+
+4.6 A
+261,616	
+Arlecchino Summoned
+
+51.81% won 50:50
+
+11,775	
+Lyney Summoned
+
+51.81% won 50:50
+
+
+4.5 C
+10,609 Albedo Summoned
+9,632 Eula Summoned
+7,112 Klee Summoned
+
+
+4.5 B
+53,741	
+Neuvillette Summoned
+
+51.68% won 50:50
+
+53,741	
+Kaedehara Kazuha Summoned
+
+51.68% won 50:50
+
+
+4.5 A
+54,242	
+Chiori Summoned
+
+51.36% won 50:50
+
+10,851	
+Arataki Itto Summoned
+
+51.36% won 50:50
+
+
+4.4 B
+31,684	
+Xiao Summoned
+
+51.37% won 50:50
+
+33,119	
+Yae Miko Summoned
+
+51.37% won 50:50
+
+
+4.4 A
+142,211	
+Xianyun Summoned
+
+51.35% won 50:50
+
+90,796	
+Nahida Summoned
+
+51.35% won 50:50
+
+
+4.3 B
+127,506	
+Raiden Shogun Summoned
+
+51.58% won 50:50
+
+18,690	
+Yoimiya Summoned
+
+51.58% won 50:50
+
+
+4.3 A
+136,731	
+Navia Summoned
+
+51.91% won 50:50
+
+27,253	
+Kamisato Ayaka Summoned
+
+51.91% won 50:50
+
+
+4.2 B
+16,283	
+Cyno Summoned
+
+51.89% won 50:50
+
+39,488	
+Kamisato Ayato Summoned
+
+51.89% won 50:50
+
+
+4.2 A
+372,644	
+Furina Summoned
+
+51.99% won 50:50
+
+24,694	
+Baizhu Summoned
+
+51.99% won 50:50
+
+
+4.1 B
+98,099	
+Wriothesley Summoned
+
+51.78% won 50:50
+
+22,439	
+Venti Summoned
+
+51.78% won 50:50
+
+
+4.1 A
+221,033	
+Neuvillette Summoned
+
+52.82% won 50:50
+
+70,591	
+Hu Tao Summoned
+
+52.82% won 50:50
+
+
+4.0 B
+28,235	
+Tartaglia Summoned
+
+52.41% won 50:50
+
+88,160	
+Zhongli Summoned
+
+52.41% won 50:50
+
+
+4.0 A
+77,500	
+Lyney Summoned
+
+52.8% won 50:50
+
+98,836	
+Yelan Summoned
+
+52.8% won 50:50
+
+
+3.8 B
+72,964	
+Sangonomiya Kokomi Summoned
+
+52.21% won 50:50
+
+74,537	
+Wanderer Summoned
+
+52.21% won 50:50
+
+
+3.8 A
+55,772	
+Eula Summoned
+
+52.78% won 50:50
+
+22,677	
+Klee Summoned
+
+52.78% won 50:50
+
+
+3.7 B
+46,290	
+Alhaitham Summoned
+
+52.66% won 50:50
+
+121,962	
+Kaedehara Kazuha Summoned
+
+52.66% won 50:50
+
+
+3.7 A
+38,396	
+Yoimiya Summoned
+
+52.29% won 50:50
+
+60,342	
+Yae Miko Summoned
+
+52.29% won 50:50
+
+
+3.6 B
+83,065	
+Baizhu Summoned
+
+51.94% won 50:50
+
+42,301	
+Ganyu Summoned
+
+51.94% won 50:50
+
+
+3.6 A
+131,540	
+Nahida Summoned
+
+52.02% won 50:50
+
+51,949	
+Nilou Summoned
+
+52.02% won 50:50
+
+
+3.5 B
+108,264	
+Shenhe Summoned
+
+51.91% won 50:50
+
+91,884	
+Kamisato Ayaka Summoned
+
+51.91% won 50:50
+
+
+3.5 A
+57,974	
+Dehya Summoned
+
+51.52% won 50:50
+
+34,225	
+Cyno Summoned
+
+51.52% won 50:50
+
+
+3.4 B
+128,417	
+Hu Tao Summoned
+
+51.98% won 50:50
+
+188,779	
+Yelan Summoned
+
+51.98% won 50:50
+
+
+3.4 A
+148,853	
+Alhaitham Summoned
+
+51.6% won 50:50
+
+45,463	
+Xiao Summoned
+
+51.6% won 50:50
+
+
+3.3 B
+201,770	
+Raiden Shogun Summoned
+
+51.94% won 50:50
+
+50,048	
+Kamisato Ayato Summoned
+
+51.94% won 50:50
+
+
+3.3 A
+250,029	
+Wanderer Summoned
+
+51.73% won 50:50
+
+28,681	
+Arataki Itto Summoned
+
+51.73% won 50:50
+
+
+3.2 B
+90,363	
+Yae Miko Summoned
+
+51.47% won 50:50
+
+55,527	
+Tartaglia Summoned
+
+51.47% won 50:50
+
+
+3.2 A
+343,854	
+Nahida Summoned
+
+51.91% won 50:50
+
+27,829	
+Yoimiya Summoned
+
+51.91% won 50:50
+
+
+3.1 B
+135,120	
+Nilou Summoned
+
+51.74% won 50:50
+
+44,938	
+Albedo Summoned
+
+51.74% won 50:50
+
+
+3.1 A
+149,178	
+Cyno Summoned
+
+51.75% won 50:50
+
+58,993	
+Venti Summoned
+
+51.75% won 50:50
+
+
+3.0 B
+84,602	
+Ganyu Summoned
+
+51.7% won 50:50
+
+68,789	
+Sangonomiya Kokomi Summoned
+
+51.7% won 50:50
+
+
+3.0 A
+80,564	
+Tighnari Summoned
+
+52.08% won 50:50
+
+117,554	
+Zhongli Summoned
+
+52.08% won 50:50
+
+
+2.8 B
+121,794	
+Yoimiya Summoned
+
+51.4% won 50:50
+
+
+2.8 A
+390,626	
+Kaedehara Kazuha Summoned
+
+52.32% won 50:50
+
+57,858	
+Klee Summoned
+
+52.32% won 50:50
+
+
+2.7 B
+94,737	
+Arataki Itto Summoned
+
+51.11% won 50:50
+
+
+2.7 A
+254,472	
+Yelan Summoned
+
+52.14% won 50:50
+
+96,916	
+Xiao Summoned
+
+52.14% won 50:50
+
+
+2.6 B
+300,645	
+Kamisato Ayaka Summoned
+
+51.85% won 50:50
+
+
+2.6 A
+270,324	
+Kamisato Ayato Summoned
+
+52.26% won 50:50
+
+154,664	
+Venti Summoned
+
+52.26% won 50:50
+
+
+2.5 B
+251,687	
+Raiden Shogun Summoned
+
+52.21% won 50:50
+
+67,235	
+Sangonomiya Kokomi Summoned
+
+52.21% won 50:50
+
+
+2.5 A
+309,776	
+Yae Miko Summoned
+
+52.28% won 50:50
+
+
+2.4 B
+339,362	
+Zhongli Summoned
+
+52.5% won 50:50
+
+274,075	
+Ganyu Summoned
+
+52.5% won 50:50
+
+
+2.4 A
+163,955	
+Shenhe Summoned
+
+52.7% won 50:50
+
+244,248	
+Xiao Summoned
+
+52.7% won 50:50
+
+
+2.3 B
+237,979	
+Arataki Itto Summoned
+
+51.86% won 50:50
+
+
+
+2.3 A
+193,038	
+Albedo Summoned
+
+52.01% won 50:50
+
+178,568	
+Eula Summoned
+
+52.01% won 50:50
+
+
+2.2 B
+546,489	
+Hu Tao Summoned
+
+51.84% won 50:50
+
+
+2.2 A
+248,321	
+Tartaglia Summoned
+
+51.13% won 50:50
+
+
+2.1 B
+211,348	
+Sangonomiya Kokomi Summoned
+
+51.14% won 50:50
+
+
+2.1 A
+547,531	
+Raiden Shogun Summoned
+
+
+2.0 B
+166,934	
+Yoimiya Summoned
+
+
+2.0 A
+281,833	
+Kamisato Ayaka Summoned
+
+
+1.6 B
+229,353	
+Kaedehara Kazuha Summoned
+
+
+1.6 A
+100,603	
+Klee Summoned
+
+
+1.5 B
+106,000	
+Eula Summoned
+
+
+1.5 A
+101,479	
+Zhongli Summoned
+
+
+1.4 B
+47,426	
+Tartaglia Summoned
+
+
+1.4 A
+34,416	
+Venti Summoned
+
+
+1.3 B
+19,125	
+Hu Tao Summoned
