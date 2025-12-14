@@ -175,18 +175,8 @@ def compute_reruns(df):
         
         if char in last_appearance:
             prev_days = last_appearance[char]
-            # Interval: Current Start - Previous Start (Approximate, or better Previous End?)
-            # User request: "gap between a character’s previous banner and its next appearance"
-            # We only have start dates (approx).
-            # Banner duration is usually 21 days.
-            # So gap = (Current Start) - (Previous Start + 21)
-            # But let's stick to start-to-start difference or start-to-end.
-            # Let's use Start-to-Start for simplicity, or (Start - Prev_Start - 21) for "gap time".
-            # The prompt says "rerun interval is the time gap between a character’s previous banner and its next appearance".
-            # Usually this implies the time NOT on banner.
-            # So (Current Start) - (Previous End).
+
             # Previous End = Previous Start + 21.
-            
             interval = current_days - (prev_days + 21)
             # If interval is negative? (Overlapping banners? Should not happen)
             if interval < 0:
@@ -205,8 +195,6 @@ def compute_reruns(df):
         else:
             # First time seeing this char in OUR dataset.
             # IMPORTANT: For chars released in 1.0-1.2, their first appearance here (1.3+) is NOT their release.
-            # But we don't have 1.0-1.2 data.
-            # We will treat the first occurrence in THIS dataset as "First Record".
             # RerunInterval will be NaN.
             last_appearance[char] = current_days
             appear_counts[char] = 1

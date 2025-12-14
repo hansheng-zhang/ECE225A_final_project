@@ -18,35 +18,11 @@ def analyze_and_plot(input_file):
         lambda x: (x - x.mean()) / x.std()
     )
     
-    # We need to map this back to the reruns df
-    # Rerun logic: The wish count of the *previous* banner might influence the *next* rerun interval.
-    # OR: Does the character's *general* popularity (e.g. average wishes) influence rerun frequency?
-    # The prompt says: "whether characters with higher wish counts tend to rerun sooner".
-    # This usually means "If I sold well, do I come back sooner?"
-    # So we should look at the Wish Count of the *Banner N* vs the Interval to *Banner N+1*.
-    # In our data:
-    # Row X is Banner N. Interval X is time *since* N-1.
-    # So Interval X is the gap leading up to Banner N.
-    # So we should correlate Interval X with Wish Count of Banner N-1.
-    # BUT, we don't have explicit "Previous Banner Wish Count" column easily without shift.
-    
-    # Let's adjust.
-    # We want to see if "High Popularity -> Short Wait".
-    # Ideally: WishCount(Appearance K) vs Interval(Appearance K+1).
-    # Currently: RerunInterval is "Time since previous".
-    # So for Row i: RerunInterval is time between i-1 and i.
-    # We should match this with WishCount of i-1.
-    
-    # Let's create a lag feature.
     # Sort by character and Time.
     df.sort_values(['Character', 'DaysSinceLaunch'], inplace=True)
     df['PrevWishCount'] = df.groupby('Character')['WishCount'].shift(1)
     df['PrevMajorVersion'] = df.groupby('Character')['MajorVersion'].shift(1)
     
-    # Re-calculate Relative Wish Count based on the *Previous* Major Version?
-    # Or just use the Wish Count of the previous banner and normalize it by *its* era.
-    
-    # Let's calculate globally normalized wish counts (by major version stats)
     # First, compute stats per major version
     mv_stats = df.groupby('MajorVersion')['WishCount'].agg(['mean', 'std']).reset_index()
     
